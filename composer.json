@@ -1,0 +1,21 @@
+{
+    "name": "hexpang/face-plus-plus4laravel",
+    "description": "Face Plus Plus SDK For Laravel",
+    "type": "library",
+    "require": {
+        "hexpang/http-api-helper": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hexpang",
+            "email": "hexpang@live.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "hexpang\\": "./src/hexpang"
+        }
+    }
+}
