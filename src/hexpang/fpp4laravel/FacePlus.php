@@ -10,6 +10,22 @@ class FacePlus{
     var $helper;
     var $api_key;
     var $api_secret;
+    private static $instance;
+
+    /**
+     * 单例
+     * @return mixed
+     */
+    public static function sharedDefaults(){
+        if(!FacePlus::$instance){
+            FacePlus::$instance = new FacePlus();
+        }
+        return FacePlus::$instance;
+    }
+
+    /**
+     * FacePlus constructor.
+     */
     public function __construct(){
         $this->api_key = env('FPP_API_KEY','your-api-key');
         $this->api_secret = env('FPP_API_SECRET','your-api-secret');
