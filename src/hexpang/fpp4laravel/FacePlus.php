@@ -14,7 +14,7 @@ class FacePlus{
 
     /**
      * 单例
-     * @return mixed
+     * @return FacePlus
      */
     public static function sharedDefaults(){
         if(!FacePlus::$instance){
