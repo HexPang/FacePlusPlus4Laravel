@@ -122,6 +122,11 @@ class FacePlus{
      * @return mixed
      */
     private function execute($action,$data){
+        foreach ($data as $k=>$v){
+            if(empty($v)){
+                unset($data[$k]);
+            }
+        }
         $data['api_key'] = $this->api_key;
         $data['api_secret'] = $this->api_secret;
         return $this->helper->Post($action,$data);
