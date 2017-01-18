@@ -5,5 +5,7 @@ FacePlusPlus SDK For Laravel
 > composer require hexpang/face-plus-plus4laravel
 
 > use hexpang\fpp4laravel\FacePlus;
+
 使用 **FacePlus::sharedDefaults()**调用
+
 其他方式后续加入
